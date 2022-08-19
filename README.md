@@ -1,5 +1,6 @@
 # Compilador
-Proyecto de Traductores de Lenguajes
+Proyecto de Traductores de Lenguajes.
+
 Desarrollado por: Pérez Flores Eduardo Rafael
 
 ## Etapas de desarrollo-Modulos
