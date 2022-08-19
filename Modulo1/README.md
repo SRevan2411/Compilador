@@ -26,7 +26,7 @@ Donde:
 * Imprime en pantalla el tipo de Símbolo identificado
 * Imprime en pantalla el estado donde se quedó de ocurrir un error.
 
-#### Tabla de valores a retornar (La columna *Tipo* es el entero que retorna*)
+#### Tabla de valores a retornar (La columna *Tipo* es el entero que retorna)
 
 | Símbolo       | Tipo          |       |
 | ------------- |:-------------:| -----:|
