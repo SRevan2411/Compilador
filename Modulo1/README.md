@@ -17,4 +17,23 @@ Esta función retorna *true* si el caracter analizado corresponde a un dígito
 Esta función recibe una cadena y la analiza.
 Está basada en el siguiente autómata:
 
-![](/../main/Imagenes/patricio.jpg)
+![Autómata](Capturas/MiniLexicoAutomata.jpg)
+
+Donde:
+* Cada estado está dentro de una sentencia switch
+* Si al final del switch no se encuentra en un estado de aceptación, retorna error -1
+* Dependiendo del estado de aceptación retorna un valor *entero*
+* Imprime en pantalla el tipo de Símbolo identificado
+* Imprime en pantalla el estado donde se quedó de ocurrir un error.
+
+#### Tabla de valores a retornar (La columna *Tipo* es el entero que retorna*)
+
+| Símbolo       | Tipo          |       |
+| ------------- |:-------------:| -----:|
+| Identificador | 0             |       |
+| Entero        | 1             |       |
+| Real          | 2             |       |
+
+
+#### Ejemplo de salida
+![Autómata](Capturas/EjemploSalida.png)
