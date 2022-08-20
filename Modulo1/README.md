@@ -1,10 +1,22 @@
-# Mini analizador Léxico
+# Analizador Léxico Completo
 
 Este programa está basado en un autómata de estados.
 Las gramáticas que acepta son las siguientes:
 * **identificadores = letra(letra|digito)***
 * **Real = entero.entero+**
+* **Real= entero.entero**
+* **Operador de adición: + | -**
+* **Operador de multiplicación: * | /**
+* **Operador de asignación: =**
+* **Operador relacional: < | > | <= | >= | != | ==**
+* **Operador And: &&**
+* **Operador Or: ||**
+* **Operador Not: !**
+* **Parentesis: ( , )**
+* **Llave: { , }**
+* **Punto y coma: ;**
 
+* Además de las siguientes palabras reservadas: **if, while, return, else, int, float**
 ## Funciones
 
 ### EsLetra
