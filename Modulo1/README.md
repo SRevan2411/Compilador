@@ -1,39 +1,34 @@
-# Mini analizador Léxico
+# Mini analizador Sintáctico
 
-Este programa está basado en un autómata de estados.
-Las gramáticas que acepta son las siguientes:
-* **identificadores = letra(letra|digito)***
-* **Real = entero.entero+**
+Se añadieron 2 funciones
+* AnalizadorSintactico
+* StoreMatriz
 
-## Funciones
+La primera es el funcionamiento del mini analizador sintáctico
+La segunda solo se encaarga de llenar la matriz a utilizar
 
-### EsLetra
-Esta función retorna *true* si el caracter analizado corresponde a una letra
+## Capturas de funciones
+### AnalizadorSintactico
+![Analizador](Capturas/Sintactico.png)
+### StoreMatriz
+![Analizador](Capturas/StoreMatriz.png)
 
-### EsDigito
-Esta función retorna *true* si el caracter analizado corresponde a un dígito
+## Funcionamiento
 
-### AutomataLexico
-Esta función recibe una cadena y la analiza.
-Está basada en el siguiente autómata:
+El programa utiliza tablas LR y una pila, en si es un ciclo while infinito que se detiene cuando se valida
+la gramática. En cada vuelta del ciclo se obtiene un elemento de la matriz y verifica si es positivo (para
+añadir elementos a la pila) o negativo (Para relizar las reducciones).
 
-![Autómata](Capturas/MiniLexicoAutomata.jpg)
+En cada reducción se quitan los elementos de la gramática multiplicados por 2
 
-Donde:
-* Cada estado está dentro de una sentencia switch
-* Si al final del switch no se encuentra en un estado de aceptación, retorna error -1
-* Dependiendo del estado de aceptación retorna un valor *entero*
-* Imprime en pantalla el tipo de Símbolo identificado
-* Imprime en pantalla el estado donde se quedó de ocurrir un error.
+## Tablas LR
 
-#### Tabla de valores a retornar (La columna *Tipo* es el entero que retorna)
+![LR1](Capturas/LR1.png)
 
-| Símbolo       | Tipo          |       |
-| ------------- |:-------------:| -----:|
-| Identificador | 0             |       |
-| Entero        | 1             |       |
-| Real          | 2             |       |
+![LR2](Capturas/LR2.png)
 
+## Pruebas de funcionamiento
 
-#### Ejemplo de salida
-![Autómata](Capturas/EjemploSalida.png)
+![Test1](Capturas/MiniSalida1.png)
+
+![Test2](Capturas/MiniSalida2.png)
