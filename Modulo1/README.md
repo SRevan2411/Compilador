@@ -32,3 +32,5 @@ En cada reducción se quitan los elementos de la gramática multiplicados por 2
 ![Test1](Capturas/MiniSalida1.png)
 
 ![Test2](Capturas/MiniSalida2.png)
+
+
