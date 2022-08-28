@@ -11,7 +11,7 @@ La segunda solo se encaarga de llenar la matriz a utilizar
 ### AnalizadorSintactico
 ![Analizador](Capturas/Sintactico.png)
 ### StoreMatriz
-![Analizador](Capturas/StoreMatriz.png)
+![Analizador](Capturas/Matriz.png)
 
 ## Funcionamiento
 
