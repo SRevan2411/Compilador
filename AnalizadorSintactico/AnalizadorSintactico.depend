@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1662765066 source:d:\users\desktop\redes\analizadorsintactico\main.cpp
+	"pila.h"
+	<iostream>
+	<string>
+	<stack>
+
+1662764421 source:d:\users\desktop\redes\analizadorsintactico\pila.cpp
+	"pila.h"
+	<iostream>
+	<sstream>
+
+1662764182 d:\users\desktop\redes\analizadorsintactico\pila.h
+	<list>
+	<iostream>
+	<string>
+
+1663598539 source:d:\users\desktop\redes\modulo 2\analizadorsintactico\pila.cpp
+	"pila.h"
+	<iostream>
+	<sstream>
+
+1663599151 d:\users\desktop\redes\modulo 2\analizadorsintactico\pila.h
+	<list>
+	<iostream>
+	<string>
+
+1663599167 source:d:\users\desktop\redes\modulo 2\analizadorsintactico\main.cpp
+	"pila.h"
+	<iostream>
+	<string>
+	<stack>
+
