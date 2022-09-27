@@ -434,6 +434,316 @@ void R15(){
 
 }//end R15
 
+void R16(){
+    Terminal *t1;
+    Terminal *t2;
+    int dato;
+    ElementoPila *fila = new ElementoPila;
+    p1.pop();
+    p1.pop();
+    p1.pop();
+    p1.pop();
+    fila = p1.top();
+    dato = fila->getElemento();
+    int columna = DefLocales;
+    int elemento = Matriz[dato][columna];
+    cout<<"Elemento obtenido"<<elemento<<endl;
+    t1 = new Terminal(columna);
+    t2 = new Terminal(elemento);
+    p1.push(t1);
+    p1.push(t2);
+
+}//end R16
+
+void R17(){
+    Terminal *t1;
+    Terminal *t2;
+    int dato;
+    ElementoPila *fila = new ElementoPila;
+    p1.pop();
+    p1.pop();
+    fila = p1.top();
+    dato = fila->getElemento();
+    int columna = DefLocal;
+    int elemento = Matriz[dato][columna];
+    cout<<"Elemento obtenido"<<elemento<<endl;
+    t1 = new Terminal(columna);
+    t2 = new Terminal(elemento);
+    p1.push(t1);
+    p1.push(t2);
+
+}//end R17
+
+void R18(){
+    Terminal *t1;
+    Terminal *t2;
+    int dato;
+    ElementoPila *fila = new ElementoPila;
+    p1.pop();
+    p1.pop();
+    fila = p1.top();
+    dato = fila->getElemento();
+    int columna = DefLocal;
+    int elemento = Matriz[dato][columna];
+    cout<<"Elemento obtenido"<<elemento<<endl;
+    t1 = new Terminal(columna);
+    t2 = new Terminal(elemento);
+    p1.push(t1);
+    p1.push(t2);
+
+}//end R18
+
+void R19(){
+    Terminal *t1;
+    Terminal *t2;
+    int dato;
+    ElementoPila *fila = new ElementoPila;
+    fila = p1.top();
+    dato = fila->getElemento();
+    int columna = Sentencias;
+    int elemento = Matriz[dato][columna];
+    cout<<"Elemento obtenido"<<elemento<<endl;
+    t1 = new Terminal(columna);
+    t2 = new Terminal(elemento);
+    p1.push(t1);
+    p1.push(t2);
+
+}//end R19
+
+void R20(){
+    Terminal *t1;
+    Terminal *t2;
+    int dato;
+    ElementoPila *fila = new ElementoPila;
+    p1.pop();
+    p1.pop();
+    p1.pop();
+    p1.pop();
+    fila = p1.top();
+    dato = fila->getElemento();
+    int columna = Sentencias;
+    int elemento = Matriz[dato][columna];
+    cout<<"Elemento obtenido"<<elemento<<endl;
+    t1 = new Terminal(columna);
+    t2 = new Terminal(elemento);
+    p1.push(t1);
+    p1.push(t2);
+
+}//end R20
+
+void R21(){
+    Terminal *t1;
+    Terminal *t2;
+    int dato;
+    ElementoPila *fila = new ElementoPila;
+    p1.pop();
+    p1.pop();
+    p1.pop();
+    p1.pop();
+    p1.pop();
+    p1.pop();
+    p1.pop();
+    p1.pop();
+    fila = p1.top();
+    dato = fila->getElemento();
+    int columna = Sentencia;
+    int elemento = Matriz[dato][columna];
+    cout<<"Elemento obtenido"<<elemento<<endl;
+    t1 = new Terminal(columna);
+    t2 = new Terminal(elemento);
+    p1.push(t1);
+    p1.push(t2);
+
+}//end R21
+
+void R36(){
+    Terminal *t1;
+    Terminal *t2;
+    int dato;
+    ElementoPila *fila = new ElementoPila;
+    p1.pop();
+    p1.pop();
+    fila = p1.top();
+    dato = fila->getElemento();
+    int columna = Termino;
+    int elemento = Matriz[dato][columna];
+    cout<<"Elemento obtenido"<<elemento<<endl;
+    t1 = new Terminal(columna);
+    t2 = new Terminal(elemento);
+    p1.push(t1);
+    p1.push(t2);
+
+}//end R36
+
+void R37(){
+    Terminal *t1;
+    Terminal *t2;
+    int dato;
+    ElementoPila *fila = new ElementoPila;
+    p1.pop();
+    p1.pop();
+    fila = p1.top();
+    dato = fila->getElemento();
+    int columna = Termino;
+    int elemento = Matriz[dato][columna];
+    cout<<"Elemento obtenido"<<elemento<<endl;
+    t1 = new Terminal(columna);
+    t2 = new Terminal(elemento);
+    p1.push(t1);
+    p1.push(t2);
+
+}//end R37
+
+void R38(){
+    Terminal *t1;
+    Terminal *t2;
+    int dato;
+    ElementoPila *fila = new ElementoPila;
+    p1.pop();
+    p1.pop();
+    fila = p1.top();
+    dato = fila->getElemento();
+    int columna = Termino;
+    int elemento = Matriz[dato][columna];
+    cout<<"Elemento obtenido"<<elemento<<endl;
+    t1 = new Terminal(columna);
+    t2 = new Terminal(elemento);
+    p1.push(t1);
+    p1.push(t2);
+
+}//end R38
+
+void R39(){
+    Terminal *t1;
+    Terminal *t2;
+    int dato;
+    ElementoPila *fila = new ElementoPila;
+    p1.pop();
+    p1.pop();
+    fila = p1.top();
+    dato = fila->getElemento();
+    int columna = Termino;
+    int elemento = Matriz[dato][columna];
+    cout<<"Elemento obtenido"<<elemento<<endl;
+    t1 = new Terminal(columna);
+    t2 = new Terminal(elemento);
+    p1.push(t1);
+    p1.push(t2);
+
+}//end R39
+
+void R46(){
+    Terminal *t1;
+    Terminal *t2;
+    int dato;
+    ElementoPila *fila = new ElementoPila;
+    p1.pop();
+    p1.pop();
+    p1.pop();
+    p1.pop();
+    p1.pop();
+    p1.pop();
+    fila = p1.top();
+    dato = fila->getElemento();
+    int columna = Expresion;
+    int elemento = Matriz[dato][columna];
+    cout<<"Elemento obtenido"<<elemento<<endl;
+    t1 = new Terminal(columna);
+    t2 = new Terminal(elemento);
+    p1.push(t1);
+    p1.push(t2);
+
+}//end R46
+
+void R47(){
+    Terminal *t1;
+    Terminal *t2;
+    int dato;
+    ElementoPila *fila = new ElementoPila;
+    p1.pop();
+    p1.pop();
+    p1.pop();
+    p1.pop();
+    p1.pop();
+    p1.pop();
+    fila = p1.top();
+    dato = fila->getElemento();
+    int columna = Expresion;
+    int elemento = Matriz[dato][columna];
+    cout<<"Elemento obtenido"<<elemento<<endl;
+    t1 = new Terminal(columna);
+    t2 = new Terminal(elemento);
+    p1.push(t1);
+    p1.push(t2);
+
+}//end R47
+
+void R48(){
+    Terminal *t1;
+    Terminal *t2;
+    int dato;
+    ElementoPila *fila = new ElementoPila;
+    p1.pop();
+    p1.pop();
+    p1.pop();
+    p1.pop();
+    p1.pop();
+    p1.pop();
+    fila = p1.top();
+    dato = fila->getElemento();
+    int columna = Expresion;
+    int elemento = Matriz[dato][columna];
+    cout<<"Elemento obtenido"<<elemento<<endl;
+    t1 = new Terminal(columna);
+    t2 = new Terminal(elemento);
+    p1.push(t1);
+    p1.push(t2);
+
+}//end R48
+
+void R49(){
+    Terminal *t1;
+    Terminal *t2;
+    int dato;
+    ElementoPila *fila = new ElementoPila;
+    p1.pop();
+    p1.pop();
+    p1.pop();
+    p1.pop();
+    p1.pop();
+    p1.pop();
+    fila = p1.top();
+    dato = fila->getElemento();
+    int columna = Expresion;
+    int elemento = Matriz[dato][columna];
+    cout<<"Elemento obtenido"<<elemento<<endl;
+    t1 = new Terminal(columna);
+    t2 = new Terminal(elemento);
+    p1.push(t1);
+    p1.push(t2);
+
+}//end R49
+
+void R52(){
+    Terminal *t1;
+    Terminal *t2;
+    int dato;
+    ElementoPila *fila = new ElementoPila;
+    p1.pop();
+    p1.pop();
+    fila = p1.top();
+    dato = fila->getElemento();
+    int columna = Expresion;
+    int elemento = Matriz[dato][columna];
+    cout<<"Elemento obtenido"<<elemento<<endl;
+    t1 = new Terminal(columna);
+    t2 = new Terminal(elemento);
+    p1.push(t1);
+    p1.push(t2);
+
+}//end R52
+
+
 
 
 
@@ -813,6 +1123,7 @@ bool nAnalizadorS(int operando){
         }else if(elemento == -7){
             cout<<"Regla 6"<<endl;
             R6();
+            nAnalizadorS(operando);
         }else if(elemento == -8){
             cout<<"Regla 7"<<endl;
             R7();
@@ -831,11 +1142,11 @@ bool nAnalizadorS(int operando){
         }else if(elemento == -12){
             cout<<"Regla 11"<<endl;
             R11();
-            nAnalizadorS(15);
+            nAnalizadorS(operando);
         }else if(elemento == -13){
             cout<<"Regla 12"<<endl;
             R12();
-            nAnalizadorS(15);
+            nAnalizadorS(operando);
         }else if(elemento == -14){
             cout<<"Regla 13"<<endl;
             R13();
@@ -848,6 +1159,66 @@ bool nAnalizadorS(int operando){
             cout<<"Regla 15"<<endl;
             R15();
             nAnalizadorS(17);
+        }else if(elemento == -17){
+            cout<<"Regla 16"<<endl;
+            R16();
+            nAnalizadorS(operando);
+        }else if(elemento == -18){
+            cout<<"Regla 17"<<endl;
+            R17();
+            nAnalizadorS(operando);
+        }else if(elemento == -19){
+            cout<<"Regla 18"<<endl;
+            R18();
+            nAnalizadorS(operando);
+        }else if(elemento == -20){
+            cout<<"Regla 19"<<endl;
+            R19();
+            nAnalizadorS(operando);
+        }else if(elemento == -21){
+            cout<<"Regla 20"<<endl;
+            R20();
+            nAnalizadorS(operando);
+        }else if(elemento == -22){
+            cout<<"Regla 21"<<endl;
+            R21();
+            nAnalizadorS(operando);
+        }else if(elemento == -37){
+            cout<<"Regla 36"<<endl;
+            R36();
+            nAnalizadorS(operando);
+        }else if(elemento == -38){
+            cout<<"Regla 37"<<endl;
+            R37();
+            nAnalizadorS(operando);
+        }else if(elemento == -39){
+            cout<<"Regla 38"<<endl;
+            R38();
+            nAnalizadorS(operando);
+        }else if(elemento == -40){
+            cout<<"Regla 39"<<endl;
+            R39();
+            nAnalizadorS(operando);
+        }else if(elemento == -47){
+            cout<<"Regla 46"<<endl;
+            R46();
+            nAnalizadorS(operando);
+        }else if(elemento == -48){
+            cout<<"Regla 47"<<endl;
+            R47();
+            nAnalizadorS(operando);
+        }else if(elemento == -49){
+            cout<<"Regla 48"<<endl;
+            R48();
+            nAnalizadorS(operando);
+        }else if(elemento == -50){
+            cout<<"Regla 49"<<endl;
+            R49();
+            nAnalizadorS(operando);
+        }else if(elemento == -53){
+            cout<<"Regla 52"<<endl;
+            R52();
+            nAnalizadorS(operando);
         }
     }//end else if elemento
     else{
@@ -922,7 +1293,7 @@ int separarCadena(string datos){
 int main(){
     loadfile();
     StoreMatriz();
-    string cadena = "int funcion ( int hola , int dos , float tres ) { } $";
+    string cadena = "int main ( ) { hola = 5 + 9 ; } $";
     Terminal *t1;
     Terminal *t2;
     t1 = new Terminal(23);
