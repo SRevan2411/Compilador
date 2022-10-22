@@ -809,6 +809,8 @@ void R29(){
     Estado *t2;
     int dato;
     ElementoPila *fila = new ElementoPila;
+    ObR29 *n29 = new ObR29("vacio");
+    NoTerminal *nt = new NoTerminal(n29);
     fila = p1.top();
     dato = fila->getElemento();
     int columna = ValorRegresa;
@@ -816,7 +818,7 @@ void R29(){
     cout<<"Elemento obtenido"<<elemento<<endl;
     t1 = new Estado(columna);
     t2 = new Estado(elemento);
-    p1.push(t1);
+    p1.push(nt);
     p1.push(t2);
 
 }//end R29
@@ -1108,16 +1110,30 @@ void R40(){
 }//end R40
 
 void R46(){
+    Nodo *nd1 = new Nodo();
+    string opmul;
+    Nodo *nd2 = new Nodo();
     Estado *t1;
     Estado *t2;
     int dato;
     ElementoPila *fila = new ElementoPila;
+    ElementoPila *e1 = new ElementoPila;
+    ElementoPila *e2 = new ElementoPila;
+    ElementoPila *e3 = new ElementoPila;
     p1.pop();
+    e1 = p1.pop();
     p1.pop();
+    e2 = p1.pop();
     p1.pop();
-    p1.pop();
-    p1.pop();
-    p1.pop();
+    e3 = p1.pop();
+    e1->identificate();
+    e2->identificate();
+    e3->identificate();
+    nd1 = e1->DevuelveNodo();
+    opmul = e2->getElementos();
+    nd2 = e3->DevuelveNodo();
+    ObR46 *n46 = new ObR46(nd2,opmul,nd1);
+    NoTerminal *nt = new NoTerminal(n46);
     fila = p1.top();
     dato = fila->getElemento();
     int columna = Expresion;
@@ -1125,7 +1141,7 @@ void R46(){
     cout<<"Elemento obtenido"<<elemento<<endl;
     t1 = new Estado(columna);
     t2 = new Estado(elemento);
-    p1.push(t1);
+    p1.push(nt);
     p1.push(t2);
 
 }//end R46
@@ -1463,7 +1479,7 @@ int AutomataLexico(string cadena){
     {
         //hola 2 2.2 "hola" int float void + - * / < > <= >= || && ! != == ; ' ( ) { } = if while return else $
     case 2:
-        if(cadena == "int" || cadena == "float" || cadena == "void"){
+        if(cadena == "int" || cadena == "float" || cadena == "void" || cadena == "string"){
             cout<<"Palabra reservada: "<<cadena<<endl;
             return 4;
         }else if(cadena == "if"){
@@ -1853,7 +1869,7 @@ void PilaMuestra(){
 int main(){
     loadfile();
     StoreMatriz();
-    string cadena = "int main ( int a , int b ) { float c , d ; a = d ; } int coma ( int a ) { a = a ; } $";
+    string cadena = "int main ( float a , int b ) { return a ; } $";
     Estado *t1;
     Estado *t2;
     t1 = new Estado(23);

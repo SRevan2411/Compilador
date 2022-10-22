@@ -260,6 +260,18 @@ private:
 public:
     ObR24(string,Nodo*,string);
     void muestra();
+    void semantica();
+
+};
+
+class ObR29: public Nodo{
+private:
+    string vacio;
+
+public:
+    ObR29(string);
+    void muestra();
+    void semantica();
 
 };
 
@@ -270,7 +282,7 @@ private:
 public:
     ObR30(Nodo*);
     void muestra();
-
+    void semantica();
 };
 
 class ObR32: public Nodo{
@@ -360,6 +372,19 @@ public:
 
 };
 
+class ObR46: public Nodo{
+private:
+    Nodo *expresion1;
+    string opmul;
+    Nodo *expresion2;
+
+public:
+    ObR46(Nodo*,string,Nodo*);
+    void muestra();
+    void semantica();
+
+};
+
 class ObR47: public Nodo{
 private:
     Nodo *expresion1;
@@ -369,6 +394,7 @@ private:
 public:
     ObR47(Nodo*,string,Nodo*);
     void muestra();
+    void semantica();
 
 };
 

@@ -15,17 +15,17 @@
 	<iostream>
 	<string>
 
-1666301671 source:d:\users\desktop\redes\modulo 2\analizadorsintactico\pila.cpp
+1666462533 source:d:\users\desktop\redes\modulo 2\analizadorsintactico\pila.cpp
 	"pila.h"
 	<iostream>
 	<sstream>
 
-1666301663 d:\users\desktop\redes\modulo 2\analizadorsintactico\pila.h
+1666462533 d:\users\desktop\redes\modulo 2\analizadorsintactico\pila.h
 	<list>
 	<iostream>
 	<string>
 
-1666301663 source:d:\users\desktop\redes\modulo 2\analizadorsintactico\main.cpp
+1666462806 source:d:\users\desktop\redes\modulo 2\analizadorsintactico\main.cpp
 	"pila.h"
 	<iostream>
 	<string>

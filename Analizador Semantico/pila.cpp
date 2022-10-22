@@ -10,12 +10,16 @@ using namespace std;
 string tipoauxiliar;
 string ambito = "global";
 string tipovar;
+string tipoambito;
+
+bool ret = false;
 
 int fila = 0;
 int filaf = 0;
 
 string lfunciones[MAX][2];
 string lvariables[MAX][4];
+
 
 void utilizadas(){
     for(int i = 0; i < MAX;i++){
@@ -49,6 +53,15 @@ string getTipo(string identificador, string ambito){
         if(lvariables[i][1]==identificador && lvariables[i][2]==ambito){
             lvariables[i][3] = "si";
             return lvariables[i][0];
+        }//end if
+    }//end for
+}
+
+string getTipoAmbito(){
+    for(int i = 0; i < MAX;i++){
+        if(lfunciones[i][1]==ambito){
+            cout<<"Se encontro"<<endl;
+            return lfunciones[i][0];
         }//end if
     }//end for
 }
@@ -336,7 +349,7 @@ void ObR13::semantica(){
     if(existenciavar(this->identificador,ambito)==true){
         cout<<"Error semantico, variable: "<<this->identificador<<" repetida"<<endl;
     }else{
-        lvariables[fila][0] = tipoauxiliar;
+        lvariables[fila][0] = tipo;
         lvariables[fila][1] = this->identificador;
         lvariables[fila][2] = ambito;
         lvariables[fila][3] = "no";
@@ -453,6 +466,7 @@ void ObR21::muestra(){
 void ObR21::semantica(){
     if(existenciavar(this->identificador,ambito)==true){
         tipoauxiliar = getTipo(this->identificador,ambito);
+        cout<<"El tipo es:"<<tipoauxiliar<<endl;
         this->expresion->semantica();
     }else{
         cout<<"Error semantico, variable: " <<this->identificador<<" No declarada"<<endl;
@@ -474,6 +488,29 @@ void ObR24::muestra(){
     cout<<this->puntoycoma<<endl;
 }
 
+void ObR24::semantica(){
+    ret = true;
+    tipoambito = getTipoAmbito();
+    this->valorregresa->semantica();
+
+}
+
+ObR29::ObR29(string vacio):Nodo(){
+    this->vacio = vacio;
+}
+
+void ObR29::muestra(){
+    cout<<"<ValorRegresa>"<<endl;
+    cout<<this->vacio<<endl;
+}
+void ObR29::semantica(){
+    if(tipoambito == "void"){
+
+    }else{
+        cout<<"Error semantico, se esperaba tipo de dato despues de return"<<endl;
+    }
+}
+
 ObR30::ObR30(Nodo *expresion):Nodo(){
     this->expresion = expresion;
 }
@@ -481,6 +518,10 @@ ObR30::ObR30(Nodo *expresion):Nodo(){
 void ObR30::muestra(){
     cout<<"<ValorRegresa>"<<endl;
     this->expresion->muestra();
+}
+
+void ObR30::semantica(){
+    this->expresion->semantica();
 }
 
 ObR32::ObR32(Nodo *expresion,Nodo *listaargumentos):Nodo(){
@@ -526,10 +567,25 @@ void ObR36::muestra(){
 
 void ObR36::semantica(){
     string tipos;
+    if(ret == true){
+        tipos = getTipo(this->identificador,ambito);
+        if(tipoambito == tipos){
+        }else{
+            cout<<"Error semantico, el tipo de la funcion no es compatible con el tipo de la variable: "<<this->identificador<<endl;
+            ret = false;
+        }
+    }
+
     if(existenciavar(this->identificador,ambito)== true){
         tipos = getTipo(this->identificador,ambito);
         if(tipos != tipoauxiliar){
-            cout<<"Error semantico, tipos de datos no compatibles"<<endl;
+                if((tipos == "int" || tipos == "float") && (tipoauxiliar == "int" || tipoauxiliar == "float")){
+                    cout<<"Tipos de datos diferentes pero compatibles"<<endl;
+                }
+                else{
+                    cout<<"Error semantico, tipos de datos no compatibles"<<endl;
+                }
+
         }
     }else{
         cout<<"Error semantico, variable: "<<this->identificador<<" No declarada"<<endl;
@@ -547,6 +603,14 @@ void ObR37::muestra(){
 }
 
 void ObR37::semantica(){
+    if(ret == true){
+        if(tipoambito == "int"){
+        }else{
+            cout<<"Error semantico, se esperaba un int en el tipo de ambito"<<endl;
+            ret = false;
+        }
+    }
+
     if(tipoauxiliar == "float"){
         cout<<"Warning, tipos diferentes pero compatibles"<<endl;
     }else if(tipoauxiliar == "int"){
@@ -566,6 +630,13 @@ void ObR38::muestra(){
 }
 
 void ObR38::semantica(){
+    if(ret == true){
+        if(tipoambito == "float"){
+        }else{
+            cout<<"Error semantico, se esperaba un float en el tipo de ambito"<<endl;
+            ret = false;
+        }
+    }
     if(tipoauxiliar == "float"){
 
     }else if(tipoauxiliar == "int"){
@@ -589,8 +660,8 @@ void ObR39::semantica(){
         cout<<"Error semantico, tipo de datos no compatibles"<<endl;
     }else if(tipoauxiliar == "int"){
         cout<<"Error semantico, tipo de datos no compatibles"<<endl;
-    }else{
-        cout<<"Error semantico, tipo de datos no compatibles"<<endl;
+    }else if(tipoauxiliar == "string"){
+
     }//end if else
 }
 
@@ -609,6 +680,28 @@ void ObR40::muestra(){
     cout<<this->parentesis2<<endl;
 }
 
+ObR46::ObR46(Nodo* expresion1,string opmul,Nodo* expresion2):Nodo(){
+    this->expresion1 = expresion1;
+    this->opmul = opmul;
+    this->expresion2 = expresion2;
+}
+
+void ObR46::muestra(){
+    cout<<"<Expresion>"<<endl;
+    this->expresion1->muestra();
+    cout<<this->opmul<<endl;
+    this->expresion2->muestra();
+
+
+}
+
+void ObR46::semantica(){
+    this->expresion1->semantica();
+    this->expresion2->semantica();
+
+
+}
+
 ObR47::ObR47(Nodo* expresion1,string opsuma,Nodo* expresion2):Nodo(){
     this->expresion1 = expresion1;
     this->opsuma = opsuma;
@@ -620,6 +713,13 @@ void ObR47::muestra(){
     this->expresion1->muestra();
     cout<<this->opsuma<<endl;
     this->expresion2->muestra();
+
+
+}
+
+void ObR47::semantica(){
+    this->expresion1->semantica();
+    this->expresion2->semantica();
 
 
 }
