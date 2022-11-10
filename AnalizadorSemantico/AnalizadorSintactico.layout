@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Debug" />
+	<File name="pila.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="12856" topLine="604" />
+		</Cursor>
+	</File>
+	<File name="main.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="49545" topLine="1521" />
+		</Cursor>
+		<Folding>
+			<Collapse line="1262" />
+			<Collapse line="1280" />
+			<Collapse line="1285" />
+			<Collapse line="1297" />
+			<Collapse line="1309" />
+			<Collapse line="1794" />
+		</Folding>
+	</File>
+	<File name="pila.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5232" topLine="491" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>
