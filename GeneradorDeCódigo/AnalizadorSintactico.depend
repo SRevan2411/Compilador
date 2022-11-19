@@ -1,0 +1,67 @@
+# depslib dependency file v1.0
+1662765066 source:d:\users\desktop\redes\analizadorsintactico\main.cpp
+	"pila.h"
+	<iostream>
+	<string>
+	<stack>
+
+1662764421 source:d:\users\desktop\redes\analizadorsintactico\pila.cpp
+	"pila.h"
+	<iostream>
+	<sstream>
+
+1662764182 d:\users\desktop\redes\analizadorsintactico\pila.h
+	<list>
+	<iostream>
+	<string>
+
+1668831433 source:d:\users\desktop\redes\modulo 2\analizadorsintactico\pila.cpp
+	"pila.h"
+	<iostream>
+	<sstream>
+	<string>
+	"generadorcodigo.h"
+
+1668830392 d:\users\desktop\redes\modulo 2\analizadorsintactico\pila.h
+	<list>
+	<iostream>
+	<string>
+
+1668831483 source:d:\users\desktop\redes\modulo 2\analizadorsintactico\main.cpp
+	"pila.h"
+	<iostream>
+	<string>
+	<stack>
+	<fstream>
+	<string>
+	<sstream>
+	<cstdlib>
+
+1664374382 source:d:\users\documents\cucei\sem traductores 2\redes\modulo 2\analizadorsintactico\main.cpp
+	"pila.h"
+	<iostream>
+	<string>
+	<stack>
+	<fstream>
+	<string>
+	<sstream>
+	<cstdlib>
+
+1663599151 d:\users\documents\cucei\sem traductores 2\redes\modulo 2\analizadorsintactico\pila.h
+	<list>
+	<iostream>
+	<string>
+
+1663598539 source:d:\users\documents\cucei\sem traductores 2\redes\modulo 2\analizadorsintactico\pila.cpp
+	"pila.h"
+	<iostream>
+	<sstream>
+
+1668831378 d:\users\desktop\redes\modulo 2\analizadorsintactico\generadorcodigo.h
+	<iostream>
+	"conio.h"
+
+1668831377 source:d:\users\desktop\redes\modulo 2\analizadorsintactico\generadorcodigo.cpp
+	"generadorcodigo.h"
+	<iostream>
+
