@@ -78,8 +78,13 @@ x86
 
 Se añadió esta clase para que esta cabecera se encargue de procesar las funciones ensamblador que se van llamando durante el recorrido del árbol\
 
-
+![Clase](Capturas/ClaseGen.png)
+![Suma](Capturas/Suma.png)
+![Resta](Capturas/Resta.png)
+![Multiplicacion](Capturas/Multiplicacion.png)
+![Division](Capturas/Division.png)
 
 #### Ejemplo de salida
+#### En esta implementación el programa ya puede leer código desde un archivo
 ![RunCode1](Capturas/FullSalida1.png)
 ![RunCode2](Capturas/FullSalida2.png)
