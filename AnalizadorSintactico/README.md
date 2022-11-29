@@ -93,7 +93,7 @@ Esta clase es la clase padre que sirve como base para los objetos de las reglas 
 ![EstadoTerminal](Capturas/EstadoTerminal.png)
 
 ## Gramatica compilador
-Las gramaticas que acepta el programa son las siguientes:
+Las gramaticas que acepta el programa son las siguientes:\
 ![Gramaticas](Capturas/Gramatica.png)
 
 
