@@ -25,4 +25,6 @@ Enlace al README correspondiente: https://github.com/SRevan2411/Compilador/tree/
 ### Generación de código
 Funcionamiento:
 Una vez validado lo anterior vuelve a hacer un recorrido al árbol y utiliza ensablador insertado para traducir el código de entrada
+
+Enlace al README correspondiente: https://github.com/SRevan2411/Compilador/tree/main/GeneradorDeC%C3%B3digo
 y lo ejecuta
