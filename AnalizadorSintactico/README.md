@@ -87,8 +87,14 @@ Esta clase es hija de la clase Elemento pila, contiene la informacion que se uti
 ### Clase Nodo
 Esta clase es la clase padre que sirve como base para los objetos de las reglas gramaticales, en las cuales se guarda la informacion recuperada de cada gramatica.
 
+![Nodo](Capturas/Nodo.png)
+![ElementoPila](Capturas/ElementoPila.png)
+![NoTerminal](Capturas/NoTerminal.png)
+![EstadoTerminal](Capturas/EstadoTerminal.png)
+
 ## Gramatica compilador
 Las gramaticas que acepta el programa son las siguientes:
+![Gramaticas](Capturas/Gramatica.png)
 
 
 
