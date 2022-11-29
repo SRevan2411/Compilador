@@ -80,7 +80,8 @@ Además agregué una función para que muestre advertencias cuando una variable 
 ### Tabla de variables utilizada
 
 | Ambito       | Tipo          | Variable      | Utilizada |
-|              |               |               |           |
+| ------------- |:-------------:| -----:| :-----:|
+
 
 La tabla de variables es una matríz bidimensional en la que se guarda y recupera la siguiente información.\
 
@@ -89,10 +90,13 @@ La tabla de variables es una matríz bidimensional en la que se guarda y recuper
 ### Tabla de funciones utilizada
 
 | Tipo       | Ambito  |   
-|            |         |
+| ------------- |:-------------:|
+
 
 La tabla de funciones es una matríz bidimensional en la que se guarda y recupera la siguiente información.
 
+
+## Funciones para revisar si las funciones o variables existen
 
 
 
