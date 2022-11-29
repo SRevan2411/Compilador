@@ -1,4 +1,4 @@
-# Analizador Léxico Completo
+# Generación de código
 
 Este programa está basado en un autómata de estados.
 Las gramáticas que acepta son las siguientes:
@@ -66,6 +66,17 @@ Donde:
 | return        | 21            |       |
 | else        | 22            |       |
 | $        | 23            |       |
+
+
+## Generación de código
+Esta parte del código funciona de manera similar al analizador semántico, solo que esta vez utiliza la información de las\
+tablas de variables para traducir el código a ensamblador y ejecutarlo.\
+Se utilizó ensamblador insertado para C++ (MASM), este programa lo probé en procesadores AMD 64, pero debería funcionar también para los\
+x86
+
+## Clase generadorcodigo
+
+Se añadió esta clase para que esta cabecera se encargue de procesar las funciones ensamblador que se van llamando durante el recorrido del árbol\
 
 
 
