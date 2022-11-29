@@ -24,7 +24,7 @@ Enlace al README correspondiente: https://github.com/SRevan2411/Compilador/tree/
 ## Modulo 4
 ### Generación de código
 Funcionamiento:
-Una vez validado lo anterior vuelve a hacer un recorrido al árbol y utiliza ensablador insertado para traducir el código de entrada
+Una vez validado lo anterior vuelve a hacer un recorrido al árbol y utiliza ensablador insertado para traducir el código de entrada y lo ejecuta
 
 Enlace al README correspondiente: https://github.com/SRevan2411/Compilador/tree/main/GeneradorDeC%C3%B3digo
-y lo ejecuta
+
