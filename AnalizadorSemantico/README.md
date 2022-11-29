@@ -1,4 +1,4 @@
-# Analizador Léxico Completo
+# Analizador Semántico
 
 Este programa está basado en un autómata de estados.
 Las gramáticas que acepta son las siguientes:
@@ -66,6 +66,32 @@ Donde:
 | return        | 21            |       |
 | else        | 22            |       |
 | $        | 23            |       |
+
+
+## Analizador semántico
+El analizador semántico se encarga de revisar si existen funciones o variables que no se declararon,\
+revisa si los valores asignados a las variables corresponden con su tipo, y se encarga de revisar que\
+no existan variables o funciones repetidas.\
+El funcionamiento del analizador hace recorridos al árbol sintáctico recuperado del analizador sintáctico.\
+En sus recorridos va guardando y comparando la información de las funciones y variables que se están utilizando en el código.\
+Si durante su recorrido encuentra algún caso de los anteriormente mencionados suelta un error semántico e indica de que se trata.\
+Además agregué una función para que muestre advertencias cuando una variable no ha sido utilizada
+
+### Tabla de variables utilizada
+
+La tabla de variables es una matríz bidimensional en la que se guarda y recupera la siguiente información.\
+
+| Ambito       | Tipo          | Variable      | Utilizada |
+|              |               |               |           |
+
+### Tabla de funciones utilizada\
+
+La tabla de funciones es una matríz bidimensional en la que se guarda y recupera la siguiente información.\
+
+| Tipo       | Ambito  |   
+|            |         |
+
+
 
 
 
