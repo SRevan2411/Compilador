@@ -68,26 +68,26 @@ Donde:
 | $        | 23            |       |
 
 
-##Implementación del analizador sintáctico
+## Implementación del analizador sintáctico
 Para el analizador sintáctico se utilizó gramáticas LR en si se trata de un archivo que contiene una matriz\
 el programa carga la informacion de esa matriz en un arreglo bidimensional.\
 Ademas se agrego un clase llamada Pila, la cual el programa utiliza para que de acuerdo al Token leido por\
 el analizador lexico y la informacion de la matriz se agreguen objetos a esa pila o se retiren.\
 Los objetos que acepta esa pila son los siguientes:
 
-###Elemento pila
+### Elemento pila
 Esta es la clase padre, no contiene nada pero sirve de plantilla para los hijos de esta clase
-###No Terminal
+### No Terminal
 Esta clase es hija de la clase Elemento pila, contiene punteros al siguiente elemento del arbol
-###Terminal 
+### Terminal 
 Esta clase es hija de la clase Elemento pila, contiene el token recuperado
-###Estado
+### Estado
 Esta clase es hija de la clase Elemento pila, contiene la informacion que se utilizara para encontrar la fila, columna en la matriz.\
 
-###Clase Nodo
+### Clase Nodo
 Esta clase es la clase padre que sirve como base para los objetos de las reglas gramaticales, en las cuales se guarda la informacion recuperada de cada gramatica.
 
-##Gramatica compilador
+## Gramatica compilador
 Las gramaticas que acepta el programa son las siguientes:
 
 
