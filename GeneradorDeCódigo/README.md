@@ -86,5 +86,7 @@ Se añadió esta clase para que esta cabecera se encargue de procesar las funcio
 
 #### Ejemplo de salida
 #### En esta implementación el programa ya puede leer código desde un archivo
-![RunCode1](Capturas/FullSalida1.png)
-![RunCode2](Capturas/FullSalida2.png)
+![RunCode1](Capturas/ES1.png)
+![RunCode2](Capturas/ES2.png)
+![RunCode3](Capturas/ES3.png)
+![RunCode4](Capturas/ES4.png)
