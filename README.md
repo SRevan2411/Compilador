@@ -20,6 +20,7 @@ Enlace al README correspondiente: https://github.com/SRevan2411/Compilador/tree/
 ### Analizador semántico
 Funcionamiento:
 Utiliza el árbol sintáctico y realiza recorridos, se apoya de tablas de variables para comprobar la semántica
+Enlace al README correspondiente: https://github.com/SRevan2411/Compilador/tree/main/AnalizadorSemantico
 ## Modulo 4
 ### Generación de código
 Funcionamiento:
