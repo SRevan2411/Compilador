@@ -1,6 +1,6 @@
 # Analizador Léxico Completo
 
-Este programa está basado en un autómata de estados.
+Este programa está basado en un autómata de estados.\
 Nota: En este punto el programa acepta la entrada desde una cadena, en la fase de generación de código se implementa la lectura desde archivo.
 Las gramáticas que acepta son las siguientes:
 * **identificadores = letra(letra|digito)***
