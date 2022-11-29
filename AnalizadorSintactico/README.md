@@ -105,6 +105,6 @@ Las gramaticas que acepta el programa son las siguientes:\
 ![RunCode1](Capturas/CodigoEntrada.png)\
 ![RunCode2](Capturas/Arbol1.png)\
 ![RunCode3](Capturas/CodigoEntrada1.png)\
-![RunCode4](Capturas/Arbol 221.png)\
-![RunCode5](Capturas/Arbol 222.png)\
+![RunCode4](Capturas/Arbol221.png)\
+![RunCode5](Capturas/Arbol222.png)\
 
