@@ -11,12 +11,13 @@ Desarrollado por: Pérez Flores Eduardo Rafael
 ## Modulo 1
 ### Analizador léxico
 Funcionamiento:
-Utiliza un automata para decidir que tipo de cadena es la analizada
-
+Utiliza un automata para decidir que tipo de cadena es la analizada \
+Enlace al README correspondiente: https://github.com/SRevan2411/Compilador/tree/main/Analizador%20Lexico/Codigo
 ## Modulo 2
 ### Analizador sintáctico
 Funcionamiento:
 Utiliza gramática del compilador (LR) para validar la sintáctica y genera un árbol sintáctico
+
 ## Modulo 3
 ### Analizador semántico
 Funcionamiento:
