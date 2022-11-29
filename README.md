@@ -4,8 +4,6 @@ Proyecto de Traductores de Lenguajes.
 Desarrollado por: Pérez Flores Eduardo Rafael
 
 ## Etapas de desarrollo-Modulos
-
-1. Modulo 1: Analizador Léxico
   
   
 ## Modulo 1
