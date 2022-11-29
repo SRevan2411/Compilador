@@ -105,5 +105,7 @@ La tabla de funciones es una matríz bidimensional en la que se guarda y recuper
 
 
 #### Ejemplo de salida
-![RunCode1](Capturas/FullSalida1.png)
-![RunCode2](Capturas/FullSalida2.png)
+![RunCode1](Capturas/EntradaSemantico.png)
+![RunCode2](Capturas/SalidaSemantico.png)
+![RunCode3](Capturas/EntradaSemantico1.png)
+![RunCode4](Capturas/SalidaSemantico1.png)
