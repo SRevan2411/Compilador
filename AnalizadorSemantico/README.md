@@ -98,7 +98,9 @@ La tabla de funciones es una matríz bidimensional en la que se guarda y recuper
 
 ## Funciones para revisar si las funciones o variables existen
 
+![Existencias](Capturas/Existencias.png)
 
+![Ambitos](Capturas/Ambitos.png)
 
 
 
