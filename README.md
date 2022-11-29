@@ -15,7 +15,7 @@ Enlace al README correspondiente: https://github.com/SRevan2411/Compilador/tree/
 ### Analizador sintáctico
 Funcionamiento:
 Utiliza gramática del compilador (LR) para validar la sintáctica y genera un árbol sintáctico
-
+Enlace al README correspondiente: https://github.com/SRevan2411/Compilador/tree/main/AnalizadorSintactico
 ## Modulo 3
 ### Analizador semántico
 Funcionamiento:
