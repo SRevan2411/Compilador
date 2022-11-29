@@ -69,10 +69,11 @@ Donde:
 
 
 ## Implementación del analizador sintáctico
-Para el analizador sintáctico se utilizó gramáticas LR en si se trata de un archivo que contiene una matriz\
-el programa carga la informacion de esa matriz en un arreglo bidimensional.\
-Ademas se agrego un clase llamada Pila, la cual el programa utiliza para que de acuerdo al Token leido por\
-el analizador lexico y la informacion de la matriz se agreguen objetos a esa pila o se retiren.\
+Para el analizador sintáctico se utilizó gramáticas LR en si se trata de un archivo que contiene una matríz\
+el programa carga la información de esa matríz en un arreglo bidimensional.\
+Además se agregó un clase llamada Pila, la cual el programa utiliza para que de acuerdo al Token leído por\
+el analizador léxico y la información de la matríz se agreguen objetos a esa pila o se retiren.\
+Si existe un error sintáctico el programa muestra el valor del token en donde se quedó analizando antes de que ocurriera el error.\
 Los objetos que acepta esa pila son los siguientes:
 
 ### Elemento pila
