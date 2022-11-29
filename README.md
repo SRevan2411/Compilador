@@ -1,7 +1,10 @@
 # Compilador
 Proyecto de Traductores de Lenguajes.
 
-Desarrollado por: Pérez Flores Eduardo Rafael
+Desarrollado por: Pérez Flores Eduardo Rafael \
+Código de alumno: 219747492 \
+Materia: Seminario de solución de problemas de traductores de lenguajes 2 \
+Sección: D02 \
 
 ## Etapas de desarrollo-Modulos
   
