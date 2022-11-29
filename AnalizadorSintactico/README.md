@@ -102,5 +102,9 @@ Las gramaticas que acepta el programa son las siguientes:\
 
 
 #### Ejemplo de salida
-![RunCode1](Capturas/FullSalida1.png)
-![RunCode2](Capturas/FullSalida2.png)
+![RunCode1](Capturas/CodigoEntrada.png)\
+![RunCode2](Capturas/Arbol1.png)\
+![RunCode3](Capturas/CodigoEntrada1.png)\
+![RunCode4](Capturas/Arbol221.png)
+![RunCode5](Capturas/Arbol222.png)
+
