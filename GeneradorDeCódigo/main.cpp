@@ -6,6 +6,8 @@
 #include <string>
 #include <sstream>
 #include <cstdlib>
+#include <fstream>
+
 
 using namespace std;
 //Variables globales
@@ -1880,10 +1882,26 @@ void PilaMuestra(){
 
 }
 
+string leerarchivo(){
+    ifstream file;
+    file.open("entrada.txt");
+    string linea;
+    string aux;
+    while(file){
+        getline(file,aux);
+        linea = linea + aux;
+    }
+    file.close();
+    return linea;
+}
+
 int main(){
     loadfile();
     StoreMatriz();
-    string cadena = "int main ( int a , int b , int c ) { a = tan ( 5 ) ; a = 10 ; b = 20 ; c = a + b ; } $";
+    string cadena = leerarchivo();
+    cadena = cadena + " $";
+    cout<<cadena<<endl;
+    //string cadena = "int main ( int a , int b , int c ) { a = 10 ; b = 30 ; c = cos ( a ) ; } $";
     Estado *t1;
     Estado *t2;
     t1 = new Estado(23);
@@ -1902,5 +1920,6 @@ int main(){
     StoreMatriz();
     separarCadena(cadena);
     */
+
     return 0;
 }//end main

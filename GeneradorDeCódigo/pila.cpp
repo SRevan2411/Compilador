@@ -21,8 +21,10 @@ string funcionauxiliar;
 int contuniversal;
 string tipo1;
 string tipo2;
+bool iden = false;
 bool opsuma = false;
 bool ret = false;
+bool especial = false;
 
 int fila = 0;
 int filaf = 0;
@@ -671,7 +673,12 @@ void ObR36::semantica(){
 }
 
 string ObR36::obtenerv(){
-    cout<<"Entra"<<endl;
+
+    if(especial == true){
+
+        iden = true;
+    }
+
     return this->identificador;
 }
 
@@ -685,6 +692,7 @@ void ObR37::muestra(){
 }
 
 string ObR37::obtenerv(){
+    iden = false;
     return this->entero;
 }
 
@@ -790,8 +798,16 @@ void ObR40::semantica(){
 
     }
     if(reservado == true){
+        especial = true;
         funcionauxiliar = this->identificador;
         valor = this->argumentos->obtenerv();
+        if(iden == true){
+            cout<<"entra"<<endl;
+            string numero = obtvalores(valor);
+            cout<<numero<<endl;
+            valor = numero;
+
+        }
         cout<<"El valor es"<<valor<<endl;
         valores = stoi(valor);
         long double v2 = valores;
@@ -880,7 +896,7 @@ void ObR47::muestra(){
 }
 
 void ObR47::semantica(){
-    cout<<"HOLA"<<endl;
+
     auxoperador = this->opsuma;
     cout<<auxoperador;
 
